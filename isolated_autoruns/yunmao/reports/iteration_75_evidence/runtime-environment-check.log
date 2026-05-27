@@ -1,0 +1,25 @@
+{
+  "iteration": 75,
+  "timestamp": "2026-05-27T09:55:53Z",
+  "run_id": "20260527T025549",
+  "host": "brandos-MacBook-Pro-2.local",
+  "phase": "A",
+  "status": "blocked_on_runtime",
+  "blocker": {
+    "reason": "PAT lacks workflow scope",
+    "since_iteration": 53,
+    "duration": 23
+  },
+  "local_validation": {
+    "status": "passed",
+    "consecutive_passes": 73,
+    "total_jobs_executed": 292,
+    "schema_hash": "857368d5c88e75103334b16aa14d7e4f08b146a273606058a288a41c82be8d0d",
+    "schema_stability": 52
+  },
+  "github_actions_validation": {
+    "status": "not_executed",
+    "reason": "Cannot push workflow files to GitHub",
+    "workflow_file": ".github/workflows/openapi-contract.yml"
+  }
+}
