@@ -1,0 +1,21 @@
+{
+  "iteration": 111,
+  "phase": "A",
+  "status": "blocked_on_runtime",
+  "run_id": "20260527T040424",
+  "timestamp": "2026-05-27T11:04:24Z",
+  "local_ci_passes": 109,
+  "schema_stability": 88,
+  "blocker_duration": 59,
+  "blocker": "PAT lacks workflow scope - cannot push .github/workflows/openapi-contract.yml",
+  "blocker_verified_last": "iter 94",
+  "gates_passed": 4,
+  "gates_total": 4,
+  "jobs": ["spec-lint","gen-typescript-web","gen-typescript-admin","contract-consistency"],
+  "resolution_options": [
+    "1. Generate new GitHub PAT with workflow scope (preferred)",
+    "2. Manually create workflow via GitHub UI",
+    "3. Accept local-only validation as sufficient"
+  ],
+  "next_iteration_checkpoint": 112
+}
