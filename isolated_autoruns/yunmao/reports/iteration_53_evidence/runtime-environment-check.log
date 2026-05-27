@@ -1,44 +1,48 @@
-=== Runtime Environment Check - Iteration 53 ===
-Generated: 2026-05-27T08:46:08Z
+=== Runtime Environment Check - Iteration 53 (Updated) ===
+Generated: 2026-05-27T08:50:54Z
 
-1. Workflow staging status:
-   Command executed (iter 52): git add -f .github/workflows/openapi-contract.yml
-   Result: File staged in git index, bypassing parent .gitignore:26:isolated_autoruns/
-   
-   $ git status --porcelain .github/workflows/
-A  isolated_autoruns/yunmao/.github/workflows/openapi-contract.yml
-   
-   Staged files:
-isolated_autoruns/yunmao/.github/workflows/openapi-contract.yml
+1. Local CI gate: PASS
+   Run ID: 20260527T014545
+   51st consecutive pass
+   Schema hash stable 30 iterations (iter 24-53)
 
-2. Git ignore check:
-   $ git check-ignore -v .github/workflows/openapi-contract.yml
-(file already staged with -f, no longer reported as ignored)
+2. Local commit: SUCCESS
+   Commit 1: a56a552 - workflow at isolated_autoruns/yunmao/.github/workflows/
+   Commit 2: 144aece - workflow at .github/workflows/ (repo root)
 
-3. Workflow files present:
-   go.yml                    2069 B  (not staged)
-   integration.yml           1573 B  (not staged)
-   openapi-contract.yml      3051 B  ** STAGED **
-   perf.yml                  2766 B  (not staged)
-   proto.yml                  513 B  (not staged)
-   rust.yml                   694 B  (not staged)
-   webrtc-it.yml             1463 B  (not staged)
+3. Push to fork (commit 1 - workflow at subdirectory path): SUCCESS
+   $ git push fork feature/yunmao-openapi-contract-20260526223017
+   92d819a..a56a552  feature/yunmao-openapi-contract-20260526223017 -> ...
+   Result: Workflow file committed but GitHub Actions shows 0 runs because
+   GitHub only reads from .github/workflows/ at repo root
 
-4. Remote configuration:
-   origin: https://github.com/instructkr/claw-code.git
-   fork:   https://github.com/AIseek2025/claw-code.git
+4. Push to fork (commit 2 - workflow at repo root .github/workflows/): REJECTED
+   $ git push fork feature/yunmao-openapi-contract-20260526223017
+   ! [remote rejected] refusing to allow a Personal Access Token to create
+     or update workflow '.github/workflows/openapi-contract.yml'
+     without 'workflow' scope
+   Result: Cannot push workflow file to the path GitHub Actions requires
 
-5. Local gate validation:
-   - 51st consecutive pass (Run ID: 20260527T014545)
-   - Run IDs consistent: gate-run.log + gate-jobs.json both = 20260527T014545
-   - Schema hash: 857368d5c88e75103334b16aa14d7e4f08b146a273606058a288a41c82be8d0d (stable 30 iterations, iter 24-53)
+5. Root Cause Analysis (DEFINITIVE):
+   ┌─────────────────────────────────────────────────────────────┐
+   │  The PAT lacks GitHub 'workflow' scope.                      │
+   │                                                              │
+   │  GitHub Actions only reads from .github/workflows/ at repo   │
+   │  root. Pushing to that path requires 'workflow' scope.       │
+   │                                                              │
+   │  Subdirectory workflows (isolated_autoruns/yunmao/.github/   │
+   │  workflows/) are pushed successfully but ignored by GitHub    │
+   │  Actions, resulting in 0 workflow runs.                      │
+   └─────────────────────────────────────────────────────────────┘
 
-6. Iteration 53 action:
-   - Workflow file committed to local branch: feature/yunmao-openapi-contract-20260526223017
-   - Commit ready for push to remote (fork or origin, depending on access)
-   - After push, GitHub Actions should automatically execute openapi-contract.yml
+6. Iterations 25-50 attributed this to "PAT issues" without direct evidence.
+   Iteration 50 revised to "untracked workflow files" (workflow not committed).
+   Iteration 51 revised to "parent .gitignore rule".
+   Iteration 53 now has DIRECT reproduction: git push error message confirms
+   PAT missing 'workflow' scope as the definitive blocker.
 
-7. Phase A exit criteria:
-   - Shared contract consumed by clients: YES (stable 30 iterations)
-   - CI automation gate exists: YES (4 jobs, 51 passes)
-   - GitHub Actions execution: PENDING commit + push
+7. Resolution paths:
+   a. Generate new PAT with 'workflow' scope → push .github/workflows/
+   b. Use GitHub web UI to create workflow manually
+   c. Use ssh key auth with workflow permissions
+   d. Stakeholder accepts local-only validation for Phase A exit
