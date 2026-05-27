@@ -1,0 +1,35 @@
+{
+  "iteration": 84,
+  "run_id": "20260527T031717",
+  "timestamp": "2026-05-27T10:17:21Z",
+  "host": "brandos-MacBook-Pro-2.local",
+  "repo": "/Users/brando/Documents/trae_projects/CodeMaster/isolated_autoruns/yunmao",
+  "branch": "feature/yunmao-openapi-contract-20260526223017",
+  "status": "blocked_on_runtime",
+  "phase": "A",
+  "jobs": [
+    {"name": "spec-lint", "status": "PASS", "duration_ms": null},
+    {"name": "gen-typescript-web", "status": "PASS", "duration_ms": 582},
+    {"name": "gen-typescript-admin", "status": "PASS", "duration_ms": 331},
+    {"name": "contract-consistency", "status": "PASS", "duration_ms": null}
+  ],
+  "overall": "PASS",
+  "consecutive_passes": 82,
+  "total_jobs_executed": 328,
+  "schema_hash": "857368d5c88e75103334b16aa14d7e4f08b146a273606058a288a41c82be8d0d",
+  "schema_stability_iterations": 61,
+  "runtime_blocker_duration_iterations": 32,
+  "blocker": {
+    "type": "external_dependency",
+    "cause": "GitHub PAT lacks workflow scope",
+    "impact": "Cannot push .github/workflows/openapi-contract.yml to .github/workflows/",
+    "established_iteration": 53
+  },
+  "resolution_options": [
+      "Generate new GitHub PAT with workflow scope (preferred)",
+      "Manually create workflow via GitHub UI",
+      "Accept local-only validation as sufficient"
+  ],
+  "code_changes": "None (preservation iteration)",
+  "phase_a_exit_ready": "no"
+}
