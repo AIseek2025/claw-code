@@ -1,0 +1,14 @@
+{
+  "iteration": 129,
+  "phase": "A",
+  "phase_name": "Contract & CI Hardening",
+  "status": "blocked_on_runtime",
+  "local_ci_run_id": "20260527T044104",
+  "consecutive_passes": 127,
+  "cumulative_jobs": 508,
+  "schema_hash": "857368d5c88e75103334b16aa14d7e4f08b146a273606058a288a41c82be8d0d",
+  "schema_stable_since": 24,
+  "blocker": "GitHub PAT lacks workflow scope",
+  "blocker_duration_iterations": 36,
+  "phase_exit_ready": false
+}

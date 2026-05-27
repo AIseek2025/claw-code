@@ -1,0 +1,26 @@
+=== Runtime Environment Check — Iteration 129 ===
+Host: brandos-MacBook-Pro-2.local
+User: brando
+Branch: feature/yunmao-openapi-contract-20260526223017
+Iteration: 129
+Phase: A (Contract & CI Hardening)
+
+=== Local CI Gate Results ===
+Run ID: 20260527T044104
+Jobs: 4/4 PASS
+- spec-lint: PASS
+- gen-typescript-web: PASS (773ms)
+- gen-typescript-admin: PASS (538ms)
+- contract-consistency: PASS
+
+=== Cumulative Metrics ===
+Consecutive passes: 127
+Cumulative jobs run: 508
+Schema stable iterations: 106 (iter 24-129)
+Schema hash: 857368d5c88e75103334b16aa14d7e4f08b146a273606058a288a41c82be8d0d
+
+=== Blocker Status ===
+Blocker: GitHub PAT lacks `workflow` scope
+Blocker duration: 36 iterations (iter 94-129)
+Required action: PAT with `workflow` scope, or manual workflow creation via GitHub UI, or stakeholder decision to accept local-only validation.
+Last PAT scope probe: reports/iteration_94_evidence/pat_scope_probe_iteration_94.log
