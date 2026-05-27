@@ -1,0 +1,13 @@
+Run ID: 20260527T051856
+Host: brandos-MacBook-Pro-2.local
+User: brando
+Working directory: /Users/brando/Documents/trae_projects/CodeMaster/isolated_autoruns/yunmao
+
+Jobs executed:
+- spec-lint: PASS
+- gen-typescript-web: PASS (Duration 1.48s)
+- gen-typescript-admin: PASS (Duration 816ms)
+- contract-consistency: PASS
+
+Summary: Passed: 4, Failed: 0
+Overall: PASS
