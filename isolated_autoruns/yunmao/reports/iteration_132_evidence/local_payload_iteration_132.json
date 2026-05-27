@@ -1,0 +1,8 @@
+{
+  "iteration": 132,
+  "consecutive_passes": 130,
+  "schema_stable_iterations": 109,
+  "blocker_iterations": 39,
+  "phase_exit_ready": false,
+  "blocker_reason": "GitHub PAT lacks workflow scope required to push .github/workflows/ files"
+}
