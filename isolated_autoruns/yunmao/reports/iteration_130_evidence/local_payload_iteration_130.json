@@ -1,0 +1,12 @@
+{
+  "iteration": 130,
+  "work_report_target": "reports/work_report_iteration_130.md",
+  "evidence_dir": "reports/iteration_130_evidence",
+  "local_ci_run_id": "20260527T044627",
+  "consecutive_passes": 128,
+  "cumulative_jobs": 512,
+  "schema_stable_iterations": 107,
+  "blocker_active": true,
+  "blocker_iterations": 37,
+  "phase_exit_ready": false
+}
