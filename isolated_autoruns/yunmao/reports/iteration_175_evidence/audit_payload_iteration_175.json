@@ -1,0 +1,45 @@
+{
+  "iteration": 175,
+  "phase": "A",
+  "status": "blocked_on_runtime",
+  "run_id": "20260527T063809",
+  "timestamp": "2026-05-27T06:38:09+08:00",
+  "local_gates": {
+    "passed": 4,
+    "failed": 0,
+    "total": 4
+  },
+  "metrics": {
+    "consecutive_passes": 173,
+    "schema_stable_iterations": 151,
+    "blocker_iterations": 82,
+    "total_jobs_run": 700,
+    "pass_rate": "100%",
+    "schema_hash": "857368d5c88e75103334b16aa14d7e4f08b146a273606058a288a41c82be8d0d"
+  },
+  "blocker": {
+    "type": "PAT scope insufficient",
+    "detail": "PAT lacks workflow scope, cannot push GitHub Actions workflows to .github/workflows/",
+    "duration_iterations": 82,
+    "since_iteration": 94,
+    "evidence": "reports/iteration_94_evidence/pat_scope_probe_iteration_94.log",
+    "resolution_options": [
+      "Upgrade PAT with workflow:write scope",
+      "Stakeholder manually create workflow file in repo",
+      "Accept local-only validation for Phase A exit"
+    ]
+  },
+  "artifacts": [
+    {
+      "path": "reports/iteration_175_evidence/ci_run.log",
+      "size": 1035,
+      "sha256": "db96b6b905101a4fb03aa9dc8b205ad460966811399bb05fbaaaaacdd132b3d7"
+    },
+    {
+      "path": "reports/iteration_175_evidence/local_payload_iteration_175.json",
+      "size": 332,
+      "sha256": "8ad6a62eab2bbb2d7a7169f3e7476792af6743a717f668ff8a5f64ec98c9ed98"
+    }
+  ],
+  "artifact_inventory_sha256": "7f42c21ad928ba63f1a04aed9e61f2bdfbd144ec76bea5602bee511bcfa977ae"
+}
