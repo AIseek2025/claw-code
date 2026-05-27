@@ -1,0 +1,20 @@
+
+> @yunmao/admin@0.1.0 openapi-gen
+> openapi-typescript ../../go/pkg/yunmao/openapi/v3.json -o src/lib/generated-api.ts --export-type
+
+✨ openapi-typescript 7.13.0
+🚀 ../../go/pkg/yunmao/openapi/v3.json → src/lib/generated-api.ts [30.9ms]
+
+> @yunmao/admin@0.1.0 test:run
+> vitest run
+
+
+ RUN  v2.1.9 /Users/brando/Documents/trae_projects/CodeMaster/isolated_autoruns/yunmao/clients/admin
+
+ ✓ src/lib/gray.test.ts (2 tests) 2ms
+
+ Test Files  1 passed (1)
+      Tests  2 passed (2)
+   Start at  02:48:46
+   Duration  420ms (transform 14ms, setup 0ms, collect 13ms, tests 2ms, environment 131ms, prepare 29ms)
+
