@@ -1,0 +1,10 @@
+{
+  "iteration": 114,
+  "timestamp": "2026-05-27T11:11:37Z",
+  "phase_exit_ready": false,
+  "local_ci_passes": 112,
+  "schema_stability_iterations": 91,
+  "runtime_blocker": "PAT lacks workflow scope",
+  "blocker_duration_iterations": 62,
+  "blocker_verified_last": "iter 94"
+}
