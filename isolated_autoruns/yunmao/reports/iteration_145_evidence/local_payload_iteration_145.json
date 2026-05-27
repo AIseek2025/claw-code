@@ -1,0 +1,11 @@
+{
+  "iteration": 145,
+  "timestamp": "2026-05-27T05:36:08+08:00",
+  "phase": "A",
+  "status": "blocked_on_runtime",
+  "blocker": "PAT lacks workflow scope",
+  "blocker_iterations": 52,
+  "local_ci_passes": 143,
+  "schema_stable_iterations": 121,
+  "schema_hash": "857368d5c88e75103334b16aa14d7e4f08b146a273606058a288a41c82be8d0d"
+}
