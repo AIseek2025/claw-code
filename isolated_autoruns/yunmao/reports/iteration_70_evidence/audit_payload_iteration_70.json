@@ -1,0 +1,115 @@
+{
+  "iteration": 70,
+  "input_sources": [
+    {
+      "path": "reports/work_report_iteration_70.md",
+      "kind": "work_report",
+      "bytes": 6672
+    },
+    {
+      "path": "reports/audit_report_iteration_69.md",
+      "kind": "previous_audit_report",
+      "bytes": 3979
+    },
+    {
+      "path": "docs/autopilot/repair_handoff_iteration_69_repair_iter70_20260527023858.md",
+      "kind": "repair_handoff",
+      "bytes": 1899
+    },
+    {
+      "path": "reports/iteration_70_evidence/artifact_inventory.txt",
+      "kind": "evidence_log",
+      "bytes": 824
+    },
+    {
+      "path": "reports/iteration_70_evidence/code_excerpts_iteration_6.md",
+      "kind": "evidence_log",
+      "bytes": 4774
+    },
+    {
+      "path": "reports/iteration_70_evidence/contract-consistency.log",
+      "kind": "evidence_log",
+      "bytes": 306
+    },
+    {
+      "path": "reports/iteration_70_evidence/gate-jobs.json",
+      "kind": "evidence_log",
+      "bytes": 490
+    },
+    {
+      "path": "reports/iteration_70_evidence/gate-run.log",
+      "kind": "evidence_log",
+      "bytes": 1035
+    },
+    {
+      "path": "reports/iteration_70_evidence/gen-typescript-admin.log",
+      "kind": "evidence_log",
+      "bytes": 614
+    },
+    {
+      "path": "reports/iteration_70_evidence/gen-typescript-web.log",
+      "kind": "evidence_log",
+      "bytes": 690
+    },
+    {
+      "path": "reports/iteration_70_evidence/runtime-environment-check.log",
+      "kind": "evidence_log",
+      "bytes": 1537
+    },
+    {
+      "path": "reports/iteration_70_evidence/spec-lint.log",
+      "kind": "evidence_log",
+      "bytes": 60
+    },
+    {
+      "path": "reports/iteration_69_evidence/artifact_inventory.txt",
+      "kind": "evidence_log",
+      "bytes": 824
+    },
+    {
+      "path": "reports/iteration_69_evidence/audit_payload_iteration_69.json",
+      "kind": "evidence_log",
+      "bytes": 10891
+    },
+    {
+      "path": "reports/iteration_69_evidence/code_excerpts_iteration_6.md",
+      "kind": "evidence_log",
+      "bytes": 4774
+    },
+    {
+      "path": "reports/iteration_69_evidence/contract-consistency.log",
+      "kind": "evidence_log",
+      "bytes": 306
+    },
+    {
+      "path": "reports/iteration_69_evidence/gate-jobs.json",
+      "kind": "evidence_log",
+      "bytes": 490
+    },
+    {
+      "path": "reports/iteration_69_evidence/gate-run.log",
+      "kind": "evidence_log",
+      "bytes": 1035
+    },
+    {
+      "path": "reports/iteration_69_evidence/gen-typescript-admin.log",
+      "kind": "evidence_log",
+      "bytes": 612
+    },
+    {
+      "path": "reports/iteration_69_evidence/gen-typescript-web.log",
+      "kind": "evidence_log",
+      "bytes": 690
+    },
+    {
+      "path": "reports/iteration_69_evidence/runtime-environment-check.log",
+      "kind": "evidence_log",
+      "bytes": 1537
+    },
+    {
+      "path": "reports/iteration_69_evidence/spec-lint.log",
+      "kind": "evidence_log",
+      "bytes": 60
+    }
+  ]
+}
