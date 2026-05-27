@@ -1,0 +1,15 @@
+{
+  "iteration": 152,
+  "contract_version": "relay_contract_v1",
+  "agent": "opencode + GLM-5.1",
+  "timestamp": "2026-05-27T05:52:52+08:00",
+  "repo": "/Users/brando/Documents/trae_projects/CodeMaster/isolated_autoruns/yunmao",
+  "host": "brandos-MacBook-Pro-2.local",
+  "user": "brando",
+  "phase": "A",
+  "status": "blocked_on_runtime",
+  "consecutive_passes": 150,
+  "schema_stable_iterations": 128,
+  "blocker_iterations": 59,
+  "schema_hash": "857368d5c88e75103334b16aa14d7e4f08b146a273606058a288a41c82be8d0d"
+}
