@@ -1,0 +1,10 @@
+{
+  "iteration": 138,
+  "timestamp": "2026-05-27T05:25:45+08:00",
+  "status": "blocked_on_runtime",
+  "consecutive_passes": 136,
+  "schema_stable_iterations": 115,
+  "blocker_duration": 45,
+  "schema_hash": "857368d5c88e75103334b16aa14d7e4f08b146a273606058a288a41c82be8d0d",
+  "blocker_reason": "GitHub PAT lacks workflow scope"
+}
