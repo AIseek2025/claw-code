@@ -716,6 +716,13 @@ export type components = {
             access_token: string;
             user: components["schemas"]["User"];
         };
+        AuthToken: {
+            token: string;
+            /** Format: uuid */
+            user_id: string;
+            /** Format: int64 */
+            expires_at: number;
+        };
         User: {
             /** Format: uuid */
             id: string;
@@ -735,6 +742,7 @@ export type components = {
             status: "offline" | "live" | "idle";
             /** Format: uuid */
             owner_id: string;
+            cover?: string;
             /** Format: uri */
             cover_url?: string;
             region_id?: string;
@@ -817,12 +825,21 @@ export type components = {
             user_id: string;
             grams: number;
             feed_ticket_id?: string;
+            idempotency_key?: string;
             /** Format: uri */
             cam_record_url?: string;
             /** Format: date-time */
             created_at?: string;
             /** Format: date-time */
             updated_at?: string;
+        };
+        FeedResponse: {
+            /** Format: uuid */
+            id: string;
+            /** @enum {string} */
+            status: "pending" | "queued" | "dispensing" | "completed" | "failed" | "timeout" | "cancelled";
+            /** Format: uri */
+            cam_record_url?: string;
         };
         CancelFeedRequest: {
             reason?: string;
