@@ -1,0 +1,43 @@
+=== Runtime Environment Check ===
+Timestamp: 2026-05-27T04:24:22Z
+Host: brandos-MacBook-Pro-2.local
+User: brando
+Branch: feature/yunmao-openapi-contract-20260526223017
+Commit: bd61d75c
+Iteration: 121
+Phase: A (Contract & CI Hardening)
+Status: blocked_on_runtime
+
+=== Local CI Gate Results ===
+Run ID: 20260527T042416
+Overall: PASS
+Jobs Passed: 4/4
+  - spec-lint: PASS
+  - gen-typescript-web: PASS (532ms)
+  - gen-typescript-admin: PASS (1.27s)
+  - contract-consistency: PASS
+Cumulative Passes: 119 (iterations 11-121)
+Total Jobs Passed: 476
+
+=== Schema Stability ===
+Hash: 857368d5c88e75103334b16aa14d7e4f08b146a273606058a288a41c82be8d0d
+Stable Since: Iterator 24
+Stable Iterations: 98 (24-121)
+No DTO drift detected between Web and Admin
+
+=== Runtime Blocker ===
+Type: GitHub PAT lack of 'workflow' scope
+First Observed: Iteration 53
+Duration: 69 iterations (53-121)
+Impact: Controlled CI validation blocked on GitHub Actions
+Evidence: reports/iteration_94_evidence/pat_scope_probe_iteration_94.log
+
+=== Resolution Path Options ===
+1. Regenerate GitHub PAT with 'workflow' scope
+2. Manually create workflow via GitHub web UI on fork repository
+3. Accept local-only validation (119 consecutive passes)
+
+=== Phase Exit Readiness ===
+Local validation: COMPLETE (119/119 pass rate, 476 jobs, 98-iteration schema stability)
+Controlled CI validation: BLOCKED (69 iterations, PAT scope issue)
+Phase A exit: NOT READY (pending stakeholder decision on blocker resolution)
