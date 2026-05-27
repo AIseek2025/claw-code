@@ -1,0 +1,19 @@
+[03:19:42] === yunmao local-ci openapi-contract ===
+[03:19:42] Run ID: 20260527T031942
+[03:19:42] Repo:   /Users/brando/Documents/trae_projects/CodeMaster/isolated_autoruns/yunmao
+[03:19:42] User:   brando
+[03:19:42] Host:   brandos-MacBook-Pro-2.local
+[03:19:42] 
+[03:19:42] = START JOB: spec-lint
+[03:19:42] = END JOB: spec-lint (PASS)   
+[03:19:42] = START JOB: gen-typescript-web
+[03:19:44] = END JOB: gen-typescript-web (PASS)      Duration  381ms (transform 37ms, setup 0ms, collect 47ms, tests 4ms, environment 480ms, prepare 88ms)
+[03:19:44] = START JOB: gen-typescript-admin
+[03:19:45] = END JOB: gen-typescript-admin (PASS)      Duration  339ms (transform 12ms, setup 0ms, collect 11ms, tests 2ms, environment 124ms, prepare 29ms)
+[03:19:45] = START JOB: contract-consistency
+[03:19:46] = END JOB: contract-consistency (PASS)   
+[03:19:46] 
+[03:19:46] === SUMMARY ===
+[03:19:46] Passed: 4  (spec-lint gen-typescript-web gen-typescript-admin contract-consistency)
+[03:19:46] Failed: 0  (none)
+[03:19:46] === OVERALL: PASS ===
