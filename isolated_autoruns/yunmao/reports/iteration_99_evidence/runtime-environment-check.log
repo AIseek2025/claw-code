@@ -1,0 +1,17 @@
+runtime-environment-check.log:
+  host: brandos-MacBook-Pro-2.local
+  user: brando
+  repo: /Users/brando/Documents/trae_projects/CodeMaster/isolated_autoruns/yunmao
+  run_id: 20260527T034300
+  timestamp: 2026-05-27T10:43:04Z
+  local_ci_overall: PASS
+  jobs_executed: 4
+  jobs_passed: 4
+  jobs_failed: 0
+  consecutive_passes: 97
+  schema_hash: 857368d5c88e75103334b16aa14d7e4f08b146a273606058a288a41c82be8d0d
+  schema_stability_iterations: 76
+  runtime_blocker: PAT lacks workflow scope (47 iterations)
+  blocker_verified_last: iter 94 (live push rejection — reports/iteration_94_evidence/pat_scope_probe_iteration_94.log)
+  workflow_file_on_disk: .github/workflows/openapi-contract.yml (3585 bytes, untracked in git at repo root)
+  phase_exit_ready: false
