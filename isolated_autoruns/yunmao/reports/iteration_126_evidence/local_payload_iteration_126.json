@@ -1,0 +1,11 @@
+{
+  "iteration": 126,
+  "phase": "A",
+  "work_report": "reports/work_report_iteration_126.md",
+  "evidence_dir": "reports/iteration_126_evidence",
+  "schema_hash": "857368d5c88e75103334b16aa14d7e4f08b146a273606058a288a41c82be8d0d",
+  "schema_stable_since_iter": 24,
+  "consecutive_passes": 124,
+  "runtime_blocker": "pat_scope_missing",
+  "phase_exit_ready": false
+}
