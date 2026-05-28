@@ -1,0 +1,2 @@
+=== admin-svc vet ===
+EXIT=0

@@ -1,0 +1,157 @@
+=== rust tests ===
+    Finished `test` profile [optimized + debuginfo] target(s) in 0.32s
+     Running unittests src/lib.rs (target/debug/deps/yunmao_common-d8df96966508a23f)
+
+running 8 tests
+test id::tests::rejects_missing_separator ... ok
+test id::tests::all_prefixes_round_trip ... ok
+test id::tests::rejects_unknown_prefix ... ok
+test id::tests::round_trip_format ... ok
+test error::tests::yunmao_error_to_envelope ... ok
+test cloudevents::tests::defaults_present ... ok
+test error::tests::envelope_roundtrip ... ok
+test cloudevents::tests::roundtrip_typed_event ... ok
+
+test result: ok. 8 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src/lib.rs (target/debug/deps/yunmao_device_edge-87cd9813d111675f)
+
+running 5 tests
+test simulator::tests::failure_rate_100_always_fails ... ok
+test simulator::tests::happy_path_decreases_food ... ok
+test simulator::tests::insufficient_food_returns_correct_status ... ok
+test scheduler::tests::idempotent_drops_duplicate_command_id ... ok
+test scheduler::tests::submit_processes_in_order_per_device ... ok
+
+test result: ok. 5 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 2.64s
+
+     Running unittests src/main.rs (target/debug/deps/yunmao_device_edge-2715549d37161e5f)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src/lib.rs (target/debug/deps/yunmao_eventbus-2b5ac7de25923c4d)
+
+running 2 tests
+test topic::tests::dlq_suffix ... ok
+test memory::tests::publish_then_subscribe_delivers ... ok
+
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.07s
+
+     Running unittests src/lib.rs (target/debug/deps/yunmao_gateway-36615a75f5f8ded2)
+
+running 8 tests
+test auth::tests::room_scope_check ... ok
+test server::tests::config_default_listen ... ok
+test hub::tests::subscribe_and_broadcast ... ok
+test hub::tests::deregister_cleans_rooms ... ok
+test hub::tests::unsubscribe_removes_target ... ok
+test fanout::tests::local_fanout_broadcasts_to_hub ... ok
+test auth::tests::rejects_wrong_secret ... ok
+test auth::tests::verifies_valid_login_token ... ok
+
+test result: ok. 8 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src/main.rs (target/debug/deps/yunmao_gateway-d26a9c985534e64a)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests examples/bench_ws.rs (target/debug/examples/bench_ws-04f123d2b216e37b)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src/lib.rs (target/debug/deps/yunmao_ingest-588b00efed42966b)
+
+running 9 tests
+test flv::tests::keyframe_detection ... ok
+test rtmp::tests::config_defaults_are_sensible ... ok
+test flv::tests::header_encodes_flags ... ok
+test flv::tests::tag_encodes_with_prev_size ... ok
+test rtmp::tests::metadata_encoding_carries_known_keys ... ok
+test router::tests::re_register_preempts ... ok
+test router::tests::register_and_subscribe ... ok
+test rtmp::tests::handshake_round_trip_self_test ... ok
+test pipe::tests::subscriber_gets_warmup_then_live ... ok
+
+test result: ok. 9 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.01s
+
+     Running unittests src/lib.rs (target/debug/deps/yunmao_media_edge-ca2c1bb7f3e17775)
+
+running 23 tests
+test http_flv::tests::strip_suffix_works ... ok
+test abr::tests::all_profiles_have_unique_labels ... ok
+test fmp4::tests::media_segment_av_has_two_trafs_and_correct_data_offsets ... ok
+test abr::tests::ffmpeg_ladder_legacy_api_returns_migrate_error ... ok
+test fmp4::tests::aac_seq_parses_48k_stereo ... ok
+test fmp4::tests::media_segment_starts_with_moof ... ok
+test fmp4::tests::init_segment_starts_with_ftyp ... ok
+test fmp4::tests::sps_parser_extracts_size_from_known_avcc ... ok
+test fmp4::tests::init_segment_with_audio_has_two_traks ... ok
+test server::tests::config_default_addrs ... ok
+test qoe::tests::qoe_minimum_fields_roundtrip ... ok
+test abr::tests::fake_ladder_emits_per_profile ... ok
+test ll_hls::tests::packager_writes_dual_traf_when_audio_present ... ok
+test mediasink::tests::hub_fanout_to_multiple_sinks ... ok
+test abr::tests::passthrough_worker_echoes_frame ... ok
+test http_flv::tests::flv_stream_emits_header_first ... ok
+test mediasink::tests::whep_sink_emits_rtp_packets_when_hub_publishes ... ok
+test mediasink::tests::hub_drops_dead_sinks_gracefully ... ok
+test ll_hls::tests::packager_emits_init_then_manifest ... ok
+test mediasink::tests::hub_catchup_replays_known_config ... ok
+test ll_hls::tests::packager_av_part_sample_counts_match_drives ... ok
+test abr::tests::ffmpeg_ladder_spawn_source_only_when_available ... ok
+test abr::tests::subprocess_passthrough_protocol_roundtrip ... ok
+
+test result: ok. 23 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.01s
+
+     Running unittests src/main.rs (target/debug/deps/yunmao_media_edge-7904e9ed475a6858)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src/lib.rs (target/debug/deps/yunmao_protocol-b5350cd0f7a8f1b0)
+
+running 5 tests
+test events::tests::feed_command_requested_roundtrip ... ok
+test device::tests::ack_status_lowercase ... ok
+test signaling::tests::server_event_roundtrip ... ok
+test signaling::tests::client_subscribe_roundtrip ... ok
+test device::tests::dispense_command_roundtrip ... ok
+
+test result: ok. 5 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src/lib.rs (target/debug/deps/yunmao_redis-f63d50f2917992db)
+
+running 2 tests
+test tests::memory_set_nx_only_once ... ok
+test tests::idempotent_store_deduplicates ... ok
+
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src/lib.rs (target/debug/deps/yunmao_webrtc-21ba986ab17117f0)
+
+running 14 tests
+test rtp::tests::serialize_packet_has_12_byte_header ... ok
+test whip_whep::tests::protocol_pref_lenient ... ok
+test rtp::tests::aac_single_frame_packet ... ok
+test rtp::tests::h264_large_nalu_fu_a_splits_correctly ... ok
+test rtp::tests::opus_passthrough_single_packet ... ok
+test rtp::tests::h264_single_nalu_emits_one_packet ... ok
+test tests::subscriber_before_publisher_not_ready ... ok
+test tests::publisher_then_subscriber_observes_frames ... ok
+test sfu::tests::unsubscribe_removes_receiver ... ok
+test sfu::tests::whip_audio_aac_emits_rtp_packets ... ok
+test sfu::tests::whip_then_whep_receives_at_least_30_rtp_video_packets ... ok
+test whip_whep::tests::auth_required_when_configured ... ok
+test whip_whep::tests::whip_then_whep_flow_returns_sdp_answer ... ok
+test whip_whep::tests::whip_rejects_wrong_content_type ... ok
+
+test result: ok. 14 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+EXIT=0

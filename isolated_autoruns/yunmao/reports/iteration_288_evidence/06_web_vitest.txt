@@ -1,0 +1,15 @@
+=== web vitest ===
+
+[1m[7m[36m RUN [39m[27m[22m [36mv2.1.9 [39m[90m/Users/brando/Documents/trae_projects/CodeMaster/isolated_autoruns/yunmao/clients/web[39m
+
+ [32m✓[39m src/lib/contract.test.ts [2m([22m[2m3 tests[22m[2m)[22m[90m 2[2mms[22m[39m
+ [32m✓[39m src/lib/playback.test.ts [2m([22m[2m3 tests[22m[2m)[22m[90m 2[2mms[22m[39m
+ [32m✓[39m src/lib/ws.test.ts [2m([22m[2m3 tests[22m[2m)[22m[90m 2[2mms[22m[39m
+ [32m✓[39m src/lib/gray.test.ts [2m([22m[2m3 tests[22m[2m)[22m[90m 4[2mms[22m[39m
+
+[2m Test Files [22m [1m[32m4 passed[39m[22m[90m (4)[39m
+[2m      Tests [22m [1m[32m12 passed[39m[22m[90m (12)[39m
+[2m   Start at [22m 21:13:03
+[2m   Duration [22m 771ms[2m (transform 86ms, setup 0ms, collect 119ms, tests 10ms, environment 1.51s, prepare 211ms)[22m
+
+EXIT=0

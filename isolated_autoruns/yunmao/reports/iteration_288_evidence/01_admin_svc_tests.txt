@@ -1,0 +1,38 @@
+=== admin-svc tests ===
+?   	yunmao.live/services/admin-svc/cmd/admin-svc	[no test files]
+?   	yunmao.live/services/admin-svc/server	[no test files]
+=== RUN   TestUpdateThenGet
+--- PASS: TestUpdateThenGet (0.00s)
+=== RUN   TestUpdateRequiresRoom
+--- PASS: TestUpdateRequiresRoom (0.00s)
+=== RUN   TestUpdatePolicyAlsoUpdatesSafety
+--- PASS: TestUpdatePolicyAlsoUpdatesSafety (0.00s)
+=== RUN   TestGlobalSafetyDefault
+--- PASS: TestGlobalSafetyDefault (0.00s)
+=== RUN   TestFeatureFlagsCrud
+--- PASS: TestFeatureFlagsCrud (0.00s)
+=== RUN   TestSetFlagRequiresName
+--- PASS: TestSetFlagRequiresName (0.00s)
+=== RUN   TestImportWordlistAndList
+--- PASS: TestImportWordlistAndList (0.00s)
+PASS
+ok  	yunmao.live/services/admin-svc/internal/service	0.509s
+=== RUN   TestAuthGate_NoVerifier_PassesThrough
+--- PASS: TestAuthGate_NoVerifier_PassesThrough (0.00s)
+=== RUN   TestAuthGate_RequiresBearer
+--- PASS: TestAuthGate_RequiresBearer (0.18s)
+=== RUN   TestAuthGate_RejectsUserScope
+--- PASS: TestAuthGate_RejectsUserScope (0.08s)
+=== RUN   TestAuthGate_AdminScopeAccepted
+--- PASS: TestAuthGate_AdminScopeAccepted (0.15s)
+=== RUN   TestRoomsProxy_NoUpstream_ReturnsUnavailable
+--- PASS: TestRoomsProxy_NoUpstream_ReturnsUnavailable (0.00s)
+=== RUN   TestRoomsProxy_ForwardsToRoomSvc
+--- PASS: TestRoomsProxy_ForwardsToRoomSvc (0.00s)
+=== RUN   TestWalletProxy_ForwardsToBillingSvc
+--- PASS: TestWalletProxy_ForwardsToBillingSvc (0.00s)
+=== RUN   TestClaimsFromContext
+--- PASS: TestClaimsFromContext (0.00s)
+PASS
+ok  	yunmao.live/services/admin-svc/internal/transport	1.038s
+EXIT=0

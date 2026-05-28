@@ -1,0 +1,16 @@
+=== go openapi tests ===
+=== RUN   TestSpecIsValidJSON
+--- PASS: TestSpecIsValidJSON (0.00s)
+=== RUN   TestSpecHasRequiredFields
+--- PASS: TestSpecHasRequiredFields (0.00s)
+=== RUN   TestSpecHasSchemas
+--- PASS: TestSpecHasSchemas (0.00s)
+=== RUN   TestSpecPathsCoverMainServices
+--- PASS: TestSpecPathsCoverMainServices (0.00s)
+=== RUN   TestSpecOperationsHaveSchemas
+--- PASS: TestSpecOperationsHaveSchemas (0.00s)
+=== RUN   TestMobileSchemaDriftCheck
+--- PASS: TestMobileSchemaDriftCheck (0.00s)
+PASS
+ok  	yunmao.live/pkg/yunmao/openapi	0.382s
+EXIT=0
