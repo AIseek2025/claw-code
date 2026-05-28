@@ -7,12 +7,16 @@ on:
       - 'go/pkg/yunmao/openapi/**'
       - 'clients/web/**'
       - 'clients/admin/**'
+      - 'clients/android/app/src/main/java/live/yunmao/app/model/**'
+      - 'clients/ios/YunmaoApp/Sources/YunmaoApp/Models/**'
       - '.github/workflows/openapi-contract.yml'
   pull_request:
     paths:
       - 'go/pkg/yunmao/openapi/**'
       - 'clients/web/**'
       - 'clients/admin/**'
+      - 'clients/android/app/src/main/java/live/yunmao/app/model/**'
+      - 'clients/ios/YunmaoApp/Sources/YunmaoApp/Models/**'
       - '.github/workflows/openapi-contract.yml'
 
 jobs:

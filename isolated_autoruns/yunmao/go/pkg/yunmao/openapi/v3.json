@@ -2104,6 +2104,27 @@
           }
         }
       },
+      "AuthToken": {
+        "type": "object",
+        "required": [
+          "token",
+          "user_id",
+          "expires_at"
+        ],
+        "properties": {
+          "token": {
+            "type": "string"
+          },
+          "user_id": {
+            "type": "string",
+            "format": "uuid"
+          },
+          "expires_at": {
+            "type": "integer",
+            "format": "int64"
+          }
+        }
+      },
       "User": {
         "type": "object",
         "required": [
@@ -2164,6 +2185,9 @@
           "owner_id": {
             "type": "string",
             "format": "uuid"
+          },
+          "cover": {
+            "type": "string"
           },
           "cover_url": {
             "type": "string",
@@ -2432,6 +2456,9 @@
           "feed_ticket_id": {
             "type": "string"
           },
+          "idempotency_key": {
+            "type": "string"
+          },
           "cam_record_url": {
             "type": "string",
             "format": "uri"
@@ -2443,6 +2470,35 @@
           "updated_at": {
             "type": "string",
             "format": "date-time"
+          }
+        }
+      },
+      "FeedResponse": {
+        "type": "object",
+        "required": [
+          "id",
+          "status"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "format": "uuid"
+          },
+          "status": {
+            "type": "string",
+            "enum": [
+              "pending",
+              "queued",
+              "dispensing",
+              "completed",
+              "failed",
+              "timeout",
+              "cancelled"
+            ]
+          },
+          "cam_record_url": {
+            "type": "string",
+            "format": "uri"
           }
         }
       },
